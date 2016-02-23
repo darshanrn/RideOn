@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <style>
+      #login-facebook {
+        display: block;
+        width: 400px;
+        height: 76px;
+        margin: 320px 0 0 420px;
+        background: url(img/button-facebook.png);
+        }
+
+
+    </style>
+
+    </head>
+  <body>
+    
+	<script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/cordova.js"></script>
+    <script src="js/cdv-plugin-fb-connect.js"></script>
+    <script src="js/facebook-js-sdk.js"></script>
+    <script src="js/fb.js"></script>
+    
+    <button onclick="init();">Login</button>
+    <button onclick="logout();">Logout</button>
+
+        <div id="data"></div>
+
+        <div id="fb-root"></div>
+        <div id="log"></div>
+
+
+  </body>
+</html>

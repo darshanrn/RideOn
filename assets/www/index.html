@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <style>
+        	.ui-icon-custom {                
+                background: url(img/facebook.png) 50% 50% no-repeat;
+			    background-size: 30px 30px;
+			    width: 32px;
+			    height: 32px;
+			    margin-top: -15px !important;
+			    box-shadow: none;
+			    -webkit-box-shadow: none;			                
+            }
+            .ui-icon-skip {                
+                background: url(img/skip.jpg) 50% 50% no-repeat;
+			    background-size: 32px 32px;
+			    width: 32px;
+			    height: 32px;
+			    margin-top: -4px !important;
+			    margin-left: -4px !important;
+			    box-shadow: none;
+			    -webkit-box-shadow: none;			                
+            }
+            
+        </style>
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+      	<script src="js/jquery.mobile.config.js"></script>
+      	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+      	<script src="js/facebook.js"></script>
+      	
+		<script type="text/javascript">
+            app.initialize();            
+            //google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <title>Car Pool</title>
+    </head>
+    <body>
+        <div id="welcome-page" data-role="page">
+         <header data-role="header">
+            <h1>Ride On</h1>
+         </header>
+         <div id="content" data-role="content">
+            <p>
+               Ride On... application lets you either offer a drop or request a ride. You could 
+               mostly use it to commute to office or for shopping.
+            </p>
+            <!-- <a href="#facebook" id="login-facebook" data-rel='popup' data-theme="e" data-role="button" data-icon="custom">Login using FaceBook</a>  -->
+            <a href="fb.html"  rel="external" id="login-facebook" data-theme="e" data-role="button" data-icon="custom">Login using FaceBook</a>
+            <a href="signup.html?requestType=signup"  rel="external" id="login-signup" data-theme="e" data-role="button">Sign Up</a>
+            <a href="login.html"  rel="external" id="login-signin" data-theme="e" data-role="button">Sign In</a>
+           	<Center><a href="menu.html" rel="external" id="skip-login" data-theme="a" data-role="button" data-inline="true">Skip Login</a></Center>     
+         </div>
+         
+         <div id="facebook" data-role="popup" data-overlay-theme="a">
+      	  <table>
+		  	<tr>
+				<div id="fb-root"></div>           
+	            <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+	        </tr>  	
+  	   	   </table>		
+		</div>
+         
+         <div>
+         	<img src = "img/footer.png" width="100%"/>
+         </div>
+      	</div>    
+      	    
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.mobile-1.2.0.min.js"></script>
+<script src="js/fetchTravelDetails.js"></script>
+
+
+</head>
+<body>
+	 <div data-role="header" data-theme="a" >
+	    <a data-icon="home" data-iconpos="notext" href="index.html">Home</a>
+	    <h1>Plan your travel</h1>		    
+	  </div>
+	  <!-- the navbar markup -->
+	  <div data-role="navbar">
+		  <ul>
+		    <li><a href="menu.html" rel="external" >Plan</a></li>
+		    <li><a href="quickSearch.html" rel="external"  class="ui-btn-active" >Quick Search</a></li>
+		    <li><a href="history.html" rel="external" >History</a></li>		    
+		  </ul>
+	  </div>
+	  <a href="#" id="fetchDetails" data-theme="a" data-role="button" onclick="ajaxFetchDetails();">Fetch Details</a>
+	   <div data-role="content" id="listOfRides">
+			  <ul id="rideList" data-role="listview" data-theme="e" data-inset="true" data-filter="true">
+			    
+			    
+			  </ul>
+		</div>
+	
+	<div id="rideTypeOffer" data-role="popup" data-overlay-theme="a">
+		<table>
+		  	<tr>
+		  		<td><center><a href="#" data-role="button" onclick="ajaxTagUserWithRoute();" data-inline="true" corners="true"  data-theme="c">Offer Ride</a></center></td>		  		
+		  	</tr>  	
+  	   </table>		
+	</div>
+	<div id="rideTypeRequest" data-role="popup" data-overlay-theme="a">
+		<table>
+		  	<tr>		  		
+		  		<td><center><a href="#" data-role="button" onclick="ajaxTagUserWithRoute();" data-inline="true" corners="false"  data-theme="a">Request Drop</a></center></td>
+		  	</tr>  	
+  	   </table>		
+	</div>
+</body>
+</html>

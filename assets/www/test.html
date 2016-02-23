@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dialog demo</title>
+  <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+ 	<script>
+ 		function open()
+ 		{
+ 			alert("here");
+ 			$('#myPopupDiv').popup("open")
+ 		}
+ 		
+ 		
+ 	</script>
+</head>
+<body>
+ 
+<div id="myPopupDiv" data-role="popup">
+	<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+	
+</div>
+
+<div data-role="popup" id="popupBasic" class="ui-content ui-popup ui-body-d ui-overlay-shadow ui-corner-all" data-theme="d" aria-disabled="false" data-disabled="false" data-shadow="true" data-corners="true" data-transition="none" data-position-to="origin">
+			<p>I am positioned to the window.</p>
+		</div>
+<a href="#popupBasic" data-rel="popup">Open Popup</a>
+
+</body>
+</html>

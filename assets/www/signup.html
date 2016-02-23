@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Pool Sign Up</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+    <script src="js/signup.js"></script>
+</head>
+<body>
+    <div data-role="page" id="first" data-theme="b">
+        <div data-role="header" data-theme="a">
+        	<a data-icon="home" data-iconpos="notext" href="index.html" rel="external" >Home</a>
+            <h3>Sign Up</h3>
+        </div>
+
+        <div data-role="content">
+            <form id="check-user" class="ui-body ui-body-a ui-corner-all" data-ajax="false" method="post" action="#">
+                <fieldset>
+                    <div data-role="fieldcontain">
+                        <label for="username">Enter your username:</label>
+                        <input type="text" value="" name="username" id="username"/>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="password">Enter your password:</label>
+                        <input type="password" value="" name="password" id="password"/>
+                    </div>
+                    <div data-role="fieldcontain">
+						<label for="mobile">Enter your mobile number:</label>
+						<input type="number" value="" name="mobile" id="mobile"/>
+                    </div>
+                    <input type="button" data-theme="b" name="submit" id="submit" value="Submit" onclick="addUser();">
+                </fieldset>
+            </form>
+        </div>
+    	<a href="menu.html"  rel="external" id="continue_button" style="visibility: hidden"> Continue...</a>
+    </div>
+    
+    
+</body>
+</html>
